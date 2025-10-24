@@ -1,0 +1,25 @@
+#SPDX-FileCopyrightText: 2025 TU Dresden
+#SPDX-License-Identifier: LGPL-2.1-only
+
+menu "Micro-ROS Subscriber"
+
+config SERIAL_TRANSPORT_DEV
+    int "The UART Device"
+    default 0
+    depends on USEMODULE_MICRO_ROS_SERIAL_TRANSPORT
+
+config SERIAL_TRANSPORT_BAUD
+    int "The Baud Rate"
+    default 115200
+    depends on USEMODULE_MICRO_ROS_SERIAL_TRANSPORT
+
+config UDP_TRANSPORT_IP
+    string "The IP Address of the Agent"
+    depends on USEMODULE_MICRO_ROS_UDP_TRANSPORT
+
+config UDP_TRANSPORT_PORT
+    int "The Port of the Agent"
+    default 8888
+    depends on USEMODULE_MICRO_ROS_UDP_TRANSPORT
+
+endmenu # Micro-ROS Subscriber
