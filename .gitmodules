@@ -4,3 +4,4 @@
 [submodule "external_pkgs/micro_ros"]
 	path = external_pkgs/micro_ros
 	url = git@github.com:LeonardHerbst/micro_ros_riot_package.git
+	active = master
